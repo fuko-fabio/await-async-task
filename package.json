@@ -1,14 +1,14 @@
 {
   "name": "await-async-task",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Waits for async operations to be completed. Usefull for testing async operations and timers.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fuko-fabio/await-async-task.git"
+    "url": "https://github.com/fuko-fabio/await-async-task.git"
   },
   "keywords": [
     "await",
@@ -17,10 +17,13 @@
     "expect",
     "jest",
     "promise",
+    "react",
     "test",
     "unit",
     "timeout",
-    "timer"
+    "timer",
+    "hook",
+    "debounce"
   ],
   "author": "Norbert Pabian",
   "license": "MIT",
