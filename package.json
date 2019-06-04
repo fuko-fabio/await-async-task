@@ -1,7 +1,7 @@
 {
   "name": "await-async-task",
-  "version": "1.0.1",
-  "description": "Waits for async operations to be completed. Usefull for testing async operations and timers.",
+  "version": "1.0.2",
+  "description": "Waits for async operations and timers to be completed. Useful for testing async operations and timers.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
