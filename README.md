@@ -1,5 +1,5 @@
 # await-async-task
-Waits for async operations to be completed. Useful for testing async operations and timers.
+Waits for async operations or timers to be completed. Useful for testing async operations and timers especially in React.js world. Helps to test Class components and hooks based components.
 
 ## Installation
 ```bash
@@ -9,7 +9,7 @@ yarn add await-async-task -D
 ```
 
 ## Usage
-React component with async call in `componentDidMount`
+* React component with async call in `componentDidMount`
 ```javascript
 import React from 'react';
 import { shallow } from 'enzyme';
@@ -30,7 +30,7 @@ export class MyComponent extends React.Component {
 
     async componentDidMount() {
         try {
-            await await axios.get("/my/path");
+            await axios.get("/my/path");
             this.setState({status: "Success"})
         } catch (e) {
             this.setState({status: "Error"})
@@ -53,7 +53,7 @@ test("waits for component fetch success", async () => {
 });
 ```
 
-React component with debounced action
+* React component with debounced action
 ```javascript
 import React from 'react';
 import { shallow } from 'enzyme';
@@ -101,7 +101,7 @@ test("waits for component debounced action", async () => {
 
 ```
 
-React component with `useEffect` hook and async call
+* React component with `useEffect` hook and async call
 ```javascript
 import React, { useState, useEffect } from 'react';
 import { mount } from 'enzyme';
@@ -134,6 +134,4 @@ test("waits for component fetch", async () => {
 
     expect(wrapper.find('span').text()).toEqual("Success");
 });
-
-
 ```
