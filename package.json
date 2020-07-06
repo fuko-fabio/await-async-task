@@ -1,9 +1,10 @@
 {
   "name": "await-async-task",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Waits for async operations and timers to be completed. Useful for testing async operations and timers.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,5 +31,9 @@
   "bugs": {
     "url": "https://github.com/fuko-fabio/await-async-task/issues"
   },
-  "homepage": "https://github.com/fuko-fabio/await-async-task#readme"
+  "homepage": "https://github.com/fuko-fabio/await-async-task#readme",
+  "dependencies": {
+    "@types/node": "^14.0.14",
+    "typescript": "^3.9.6"
+  }
 }
